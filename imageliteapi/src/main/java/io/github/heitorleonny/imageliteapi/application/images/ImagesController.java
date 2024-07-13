@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/v1/images")
 @Slf4j // adiciona um objeto de log na classe
 @RequiredArgsConstructor
+@CrossOrigin("*")
 public class ImagesController {
     private static final Logger log = LoggerFactory.getLogger(ImagesController.class);
     private final ImageService service;
